@@ -73,9 +73,7 @@ function Sidebar() {
           fw={"500"}
           fs={"1.2rem"}
           icon={logout}
-          click={() => {
-            signOut(() => router.push("/signin"));
-          }}
+          click={signOut}
         />
       </div>
     </SidebarStyled>
